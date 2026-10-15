@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titulo,
+.dis {
+    margin: 0;
+    text-align: left;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: center
+}
+
+nav button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #1a1a1a;
+}
+
+main {
+    color: white;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #333;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.producto-img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
