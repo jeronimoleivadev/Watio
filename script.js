@@ -3,7 +3,9 @@ let productos = [
     { nombre: "Microondas", precio: 100000, categoria: "Electrodomestico", imagen: "" }
 ];
 
+const contador = document.querySelector("#contador");
 const contenedor = document.querySelector(".productos");
+let carrito = [];
 
 productos.forEach((producto) => {
     const tarjeta = document.createElement("article");
@@ -20,7 +22,10 @@ productos.forEach((producto) => {
     const boton = tarjeta.querySelector(".btn");
 
     boton.addEventListener("click", () => {
+        carrito.push(producto);
+        contador.textContent = carrito.length;
         console.log("Agregaste: " + producto.nombre);
+        console.log(carrito);
     });
 
     contenedor.appendChild(tarjeta);
